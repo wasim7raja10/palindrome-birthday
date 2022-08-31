@@ -1,38 +1,95 @@
-.App {
+h1, footer {
+  margin: 0;
+  padding: 20px 0;
+  background-color: purple;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: purple;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+form button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+button[type="reset"] {
+  background-color: black;
+}
+
+form input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid purple;
+}
+form button {
+  font-size: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: purple;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+footer h6, h6 a {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+footer h3 {
+  padding: 0;
+  margin: 0;
+}
+
+footer ol {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
