@@ -139,7 +139,7 @@ function App() {
       const [nearestPalindromeDate, difference] =
         getNearestPalindromeDate(date);
       setResult(
-        `The nearest palindrome date is ${nearestPalindromeDate[2]}-${nearestPalindromeDate[1]}-${nearestPalindromeDate[0]}, you missed by ${difference} days`
+        `Its not palindrome. The nearest palindrome date is ${nearestPalindromeDate[2]}-${nearestPalindromeDate[1]}-${nearestPalindromeDate[0]}, you missed by ${difference} days`
       );
     }
     console.log(date);
