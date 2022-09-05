@@ -3,6 +3,7 @@ import "./App.css";
 import twitterLogo from "./icons/002-twitter.png";
 import githubLogo from "./icons/003-github.png";
 import linkedinLogo from "./icons/001-linkedin.png";
+import { validateInput } from "./helper/helperfunctions";
 
 function getDate(birthday) {
   const date = birthday.split("-");
@@ -127,6 +128,10 @@ function App() {
 
   function onSubmitHandler(e) {
     e.preventDefault();
+    if(!validateInput(birthday)) {
+      setResult("Invalid Input");
+      return;
+    }
     const date = getDate(birthday);
     if (checkDatePalindrome(date)) {
       setResult("Yay its palindrome");
